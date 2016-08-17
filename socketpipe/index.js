@@ -10,5 +10,5 @@ var rl = readline.createInterface({
 });
 
 rl.on('line', function(line){
-    ws.write(line);
+    ws.write(JSON.stringify({message: line, command: "feed"}));
 })
