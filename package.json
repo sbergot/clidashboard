@@ -1,15 +1,15 @@
 {
   "name": "webbroadcast",
   "version": "1.0.0",
-  "description": "broadcast",
-  "main": "index.js",
+  "description": "broadcast an command line output on a websocket",
+  "main": "websocketserver.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "readline": "^1.3.0",
+    "websocket-stream": "^3.2.1",
     "websocketserver": "^1.0.0"
   }
 }
