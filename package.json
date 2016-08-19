@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "broadcast an command line output on a websocket",
   "main": "websocketserver.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
     "readline": "^1.3.0",
     "websocket-stream": "^3.2.1",
     "websocketserver": "^1.0.0"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2"
   }
 }
