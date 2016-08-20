@@ -10,7 +10,11 @@
     "files": [
         "./typings/index.d.ts",
         "./socketclient/src/components/Hello.tsx",
+        "./socketclient/src/components/Log.tsx",
+        "./socketclient/src/components/Section.tsx",
+        "./socketclient/src/components/Dashboard.tsx",
         "./socketclient/src/index.tsx",
+        "./socketclient/src/Contracts.ts",
         "./socketclient/src/State.ts",
         "./socketclient/src/Source.ts"
     ]

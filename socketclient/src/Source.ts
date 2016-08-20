@@ -1,7 +1,4 @@
-export interface Message {
-    msg : string;
-    time : Date;
-}
+import { Message } from "./Contracts";
 
 export function source(url : string, onmessage : (message : Message) => void) {
     var insocket = new WebSocket(url);
