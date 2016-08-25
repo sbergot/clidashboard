@@ -4,7 +4,7 @@ export class State {
   sections : Contracts.Section[];
   currentSection : Contracts.Section ;
 
-  constructor() {
+  constructor(private sectionRe : RegExp) {
     this.sections = [];
     this.newSection("(no section)");
   }
@@ -15,7 +15,12 @@ export class State {
   }
 
   log(message : Contracts.Message) {
-    this.currentSection.logs.push(message);
+    var matches = message.msg.match(this.sectionRe)
+    if (matches != null && matches.length > 1) {
+      this.newSection(matches[1]);
+    } else {
+      this.currentSection.logs.push(message);
+    }
   }
 }
 
